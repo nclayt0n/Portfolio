@@ -1,23 +1,29 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-    color: var(--color);
     font-weight: bold;
     text-shadow: .25px .5px rgb(77, 48, 11);
     font-family: 'verdana';
 }
 
 :root {
-    --color: black;
+    --white: #FFFFFF;
+    --light: #1EB697;
+    --medium: #046C9A;
+    --dark: #046C9A;
+    --red: #B43F13;
+    --grey: #A5A5A5;
 }
 
 body {
-    background: url('/images/city-behind-greenery.jpg');
+    background: url('/images/red-and-blue-shoreline-iphone-screen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     line-height: 30px;
+    color: var(--medium);
+    text-shadow: 3px 1px#00CFFF;
 }
 
 main {
@@ -27,8 +33,9 @@ main {
 }
 
 a {
-    color: var(--color);
     cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
 }
 
 a:hover {
@@ -38,6 +45,10 @@ a:hover {
 img {
     height: 200px;
     border-radius: 2px;
+}
+
+p {
+    font-size: 20px;
 }
 
 
@@ -50,12 +61,13 @@ img {
     padding: 10px;
     /* position: sticky;
     top: 0; */
-    background-color: rgb(28, 45, 226, .85);
+    background-color: var(--dark);
     border-radius: 8px;
 }
 
 h1 {
-    color: rbg(29, 5, 29);
+    text-shadow: 2px 1px var(--dark);
+    color: var(--white);
     font-size: 40px;
 }
 
@@ -70,18 +82,24 @@ h1 {
 /*contact*/
 
 #contactContainer {
-    background-color: rgb(128, 128, 128, .6);
+    background-color: var(--white);
     text-align: center;
     padding: 15px;
     width: fit-content;
     margin: 30px auto 30px auto;
     border-radius: 8px;
+    color: var(--dark);
 }
 
 .contacts {
     width: fit-content;
     margin: auto;
     margin-bottom: 10px;
+}
+
+a,
+.contactContainer {
+    color: var(--dark);
 }
 
 .contact {
@@ -105,11 +123,12 @@ h1 {
 /*bio*/
 
 #bioContainer {
-    background-color: rgba(28, 44, 226, 0.8);
+    background-color: var(--grey);
     width: 300px;
     margin: 30px auto 30px auto;
     padding: 15px;
     border-radius: 8px;
+    color: var(--white)
 }
 
 #iconContainer {
@@ -121,21 +140,38 @@ h1 {
 /*projects*/
 
 #projectsContainer {
-    background-color: rgb(128, 128, 128, .7);
+    background-color: #0E9CAA;
     width: 300px;
     margin: 30px auto 30px auto;
     padding: 15px;
     border-radius: 8px;
+    color: var(--white);
+}
+
+.projectLinks {
+    color: var(--white);
 }
 
 .verticalLine {
     padding: 0;
     margin: 0;
+    color: #B43F13;
 }
 
-h2,
-h3 {
+h2 {
     margin-bottom: 0;
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 20px;
+    color: var(--dark);
+    text-shadow: .2px .2px var(--grey);
 }
 
 @media screen and (min-width:750px) {
