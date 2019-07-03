@@ -45,6 +45,16 @@ img {
     margin: 5px;
 }
 
+.verticalLine {
+    padding: 0;
+    margin: 0;
+}
+
+h2,
+h3 {
+    margin-bottom: 0;
+}
+
 
 /*header*/
 
@@ -115,16 +125,6 @@ h1 {
     margin: 30px auto 30px auto;
     padding: 15px;
     border-radius: 8px;
-}
-
-.verticalLine {
-    padding: 0;
-    margin: 0;
-}
-
-h2,
-h3 {
-    margin-bottom: 0;
 }
 
 @media screen and (min-width:750px) {
