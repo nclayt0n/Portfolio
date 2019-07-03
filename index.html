@@ -10,37 +10,49 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>Nicole Clayton</h1>
-        <section>Contact Info
-            <div class="contacts" id="contacts">
-                <address><a href="mailto:nrclayton@outlook.com"><input type="image" src="/images/githubicon.png" alt="Github Icon" class="icon"> nrclayton@outlook.com
-                </a></address>
-                <address><a href="https://github.com/nclayt0n">
-                <input type="image" class="icon" src="/images/outlookIcon.png" alt="outlookIcon">github.com/nclayt0n</a></address>
-            </div>
+        <img src="/images/croppedStandinPhto.jpg" alt="Photo of Nicole Clayton" id="headerImg">
+    </header>
+    <main>
 
+        <section id="contactContainer">
+            <h3>Contact Info</h3>
+            <p class="verticalLine">________</p>
+            <div class="contacts" id="contacts">
+                <address class="contact"><a href="mailto:nrclayton@outlook.com"><input type="image" src="/images/githubicon.png" alt="Github Icon" class="icon"> nrclayton@outlook.com
+                        </a></address>
+                <address class="contact"><a href="https://github.com/nclayt0n">
+                        <input type="image" class="icon" src="/images/outlookIcon.png" alt="outlookIcon">github.com/nclayt0n</a></address>
+            </div>
         </section>
-        <h2>Hi, I'm Nicole. I'm a web developer who loves learning new things! Coding has become an engaging, and joyful part of my everyday. Being able to create something, no matter how big or how small, is so rewarding!
-            <br>Currently working with Html, CSS, Javascript, and JQuery.
+
+        <section id="bioContainer">
+            <h2>Hi, I'm Nicole.</h2>
+            <p class="verticalLine">________</p>
+            <p> I'm a web developer who loves learning new things! Coding has become an engaging, and joyful part of my everyday. Being able to create something, no matter how big or how small, is so rewarding!</p>
             <div id="iconContainer">
+                <p> Currently working with Html, CSS, Javascript, and JQuery.</p>
                 <img src="/images/HTMLIcon.png" alt="html icon" class="icon">
                 <img src="/images/cssLogo.png" alt="cssLogo" class="icon">
                 <img src="/images/JSLogo.png" alt="Javascipt icon" class="icon">
                 <img src="/images/JQueryIcon.png" alt="JQueryIcon" class="icon"></div>
-        </h2>
-    </header>
-    <main>
-        <section>
+
+        </section>
+
+        <section id="projectsContainer">
             <h3>Projects</h3>
+            <p class="verticalLine">________</p>
             <h4>Anatomy Quiz</h4>
-            <p>The Anatomy Quiz is a series of questions, testing your anatomy knowledge.
-                <br>It is built with HTML, CSS, Javascript, and JQuery.
-                <br><a href="https://github.com/nclayt0n/BlocQuiz">Repo Link</a>
-                <br> <a href="https://nclayt0n.github.io/BlocQuiz/">Live Link</a>
-                <div class="RepoImgContainer">
-                    <img class="liveImage" src="/images/anatomyQuiz1.png" alt="quizquestion"></div>
+            <p>The Anatomy Quiz is a series of questions, testing your anatomy knowledge.</p>
+            <p>It is built with HTML, CSS, Javascript, and JQuery.
+                <br> Click on the live link below to try it out!
             </p>
+            <div id="repoImgContainer">
+                <img class="liveImage" src="/images/anatomyQuiz1.png" alt="quizquestion"></div>
+
+            <a href="https://github.com/nclayt0n/BlocQuiz">Repo Link</a>
+            <br> <a href="https://nclayt0n.github.io/BlocQuiz/">Live Link</a>
         </section>
     </main>
 </body>
