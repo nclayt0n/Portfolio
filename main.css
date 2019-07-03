@@ -2,21 +2,27 @@
     box-sizing: border-box;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: .25px .5px rgb(77, 48, 11);
+    text-shadow: .25px .5px var(--dark);
     font-family: 'verdana';
 }
 
 :root {
-    --white: #FFFFFF;
-    --light: #1EB697;
-    --medium: #046C9A;
-    --dark: #046C9A;
-    --red: #B43F13;
-    --grey: #A5A5A5;
+    --white: rgb(255, 255, 255);
+    --light: rgb(30, 182, 151);
+    --medium: rgb(4, 108, 154);
+    --dark: rgb(4, 108, 154);
+    --red: rgb(180, 63, 19);
+    --grey: rgb(165, 165, 165);
+    --whiteOp: rgb(255, 255, 255, .7);
+    --lightOp: rgb(30, 182, 151, .7);
+    --mediumOp: rgb(4, 108, 154, .7);
+    --darkOp: rgb(4, 108, 154, .7);
+    --redOp: rgb(180, 63, 19, .7);
+    --greyOp: rgb(165, 165, 165, .7);
 }
 
 body {
-    background: url('/images/red-and-blue-shoreline-iphone-screen.jpg');
+    background: url('images/red-and-blue-shoreline-iphone-screen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -24,6 +30,13 @@ body {
     line-height: 30px;
     color: var(--medium);
     text-shadow: 3px 1px#00CFFF;
+}
+
+.verticalLine {
+    padding: 0;
+    margin: 0;
+    color: #B43F13;
+    text-align: center;
 }
 
 main {
@@ -48,7 +61,7 @@ img {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -61,7 +74,7 @@ p {
     padding: 10px;
     /* position: sticky;
     top: 0; */
-    background-color: var(--dark);
+    background-color: var(--darkOp);
     border-radius: 8px;
 }
 
@@ -82,7 +95,7 @@ h1 {
 /*contact*/
 
 #contactContainer {
-    background-color: var(--white);
+    background-color: var(--whiteOp);
     text-align: center;
     padding: 15px;
     width: fit-content;
@@ -95,14 +108,13 @@ h1 {
     width: fit-content;
     margin: auto;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-a,
-.contactContainer {
+.contactContainer,
+a {
     color: var(--dark);
-}
-
-.contact {
     text-align: left;
     display: flex;
     align-items: center;
@@ -111,6 +123,7 @@ a,
 #githubIcon,
 #outlookIcon {
     height: 16px;
+    text-align: center;
 }
 
 .icon {
@@ -123,12 +136,17 @@ a,
 /*bio*/
 
 #bioContainer {
-    background-color: var(--grey);
+    background-color: var(--greyOp);
     width: 300px;
     margin: 30px auto 30px auto;
-    padding: 15px;
+    padding: 30px;
     border-radius: 8px;
-    color: var(--white)
+    color: var(--white);
+}
+
+#bio {
+    text-align: left;
+    text-indent: 20px;
 }
 
 #iconContainer {
@@ -140,16 +158,17 @@ a,
 /*projects*/
 
 #projectsContainer {
-    background-color: #0E9CAA;
+    background-color: rgb(14, 156, 170, .7);
     width: 300px;
     margin: 30px auto 30px auto;
-    padding: 15px;
+    padding: 30px;
     border-radius: 8px;
     color: var(--white);
 }
 
 .projectLinks {
     color: var(--white);
+    text-align: center;
 }
 
 .verticalLine {
@@ -164,14 +183,20 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 32px;
     margin-bottom: 0;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
     color: var(--dark);
     text-shadow: .2px .2px var(--grey);
+    margin-bottom: 0;
+}
+
+h5 {
+    margin-bottom: 0;
+    font-size: 20px;
 }
 
 @media screen and (min-width:750px) {
@@ -209,6 +234,9 @@ h4 {
     #contactContainer {
         width: 300px;
     }
+    .liveImage {
+        height: 350px;
+    }
 }
 
 @media screen and (min-width:1000px) {
@@ -222,5 +250,8 @@ h4 {
     }
     header {
         height: 175px;
+    }
+    .liveImage {
+        height: 500px;
     }
 }
