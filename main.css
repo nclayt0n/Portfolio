@@ -22,7 +22,7 @@
 }
 
 body {
-    background: url('images/red-and-blue-shoreline-iphone-screen.jpg');
+    background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
