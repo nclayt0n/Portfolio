@@ -6,7 +6,7 @@
     font-family: 'verdana';
 }
 
-:root {
+ :root {
     --white: rgb(255, 255, 255);
     --light: rgb(30, 182, 151);
     --medium: rgb(4, 108, 154);
@@ -21,6 +21,24 @@
     --greyOp: rgb(165, 165, 165, .7);
 }
 
+#welcome {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 150px;
+    line-height: 55px;
+    padding: 50px;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 1px var(--dark);
+    font-weight: bold;
+    background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 body {
     background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
     background-repeat: no-repeat;
@@ -29,7 +47,8 @@ body {
     background-position: center;
     line-height: 30px;
     color: var(--medium);
-    text-shadow: 3px 1px#00CFFF;
+    text-shadow: 3px 1px #00CFFF;
+    letter-spacing: .9px;
 }
 
 .verticalLine {
@@ -37,11 +56,10 @@ body {
     margin: 0;
     color: #B43F13;
     text-align: center;
+    letter-spacing: 0px;
 }
 
 main {
-    /* display: flex;
-    flex-direction: column; */
     text-align: center;
 }
 
@@ -61,7 +79,8 @@ img {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: left;
 }
 
 
@@ -69,7 +88,7 @@ p {
 
 #header {
     text-align: center;
-    height: 125px;
+    height: fit-content;
     width: 100%;
     padding: 10px;
     /* position: sticky;
@@ -82,6 +101,7 @@ h1 {
     text-shadow: 2px 1px var(--dark);
     color: var(--white);
     font-size: 40px;
+    line-height: 40px;
 }
 
 #headerImg {
@@ -98,30 +118,31 @@ h1 {
     background-color: var(--whiteOp);
     text-align: center;
     padding: 15px;
-    width: fit-content;
-    margin: 30px auto 30px auto;
+    /* margin: 30px auto 30px auto; */
     border-radius: 8px;
-    color: var(--dark);
+    color: rgb(14, 156, 170, .7);
 }
 
 .contacts {
     width: fit-content;
     margin: auto;
-    margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
+    padding: 5px;
 }
 
-.contactContainer,
-a {
-    color: var(--dark);
+address.contact {
+    padding: 5px;
+}
+
+.contactLink {
+    color: rgb(14, 156, 170);
     text-align: left;
     display: flex;
-    align-items: center;
 }
 
 #githubIcon,
-#outlookIcon {
+#outlookIcon,
+#linkedInIcon {
     height: 16px;
     text-align: center;
 }
@@ -130,6 +151,10 @@ a {
     height: 40px;
     border-radius: 3px;
     margin: 5px;
+}
+
+.bigScreen {
+    display: none;
 }
 
 
@@ -142,16 +167,20 @@ a {
     padding: 30px;
     border-radius: 8px;
     color: var(--white);
+    height: fit-content;
 }
 
-#bio {
+.bio {
+    font-size: 16px;
     text-align: left;
-    text-indent: 20px;
+    /* text-indent: 20px; */
 }
 
 #iconContainer {
+    /*p and icons*/
     margin: auto;
     width: fit-content;
+    text-align: left;
 }
 
 
@@ -168,7 +197,6 @@ a {
 
 .projectLinks {
     color: var(--white);
-    text-align: center;
 }
 
 .verticalLine {
@@ -190,7 +218,7 @@ h3 {
 h4 {
     font-size: 24px;
     color: var(--dark);
-    text-shadow: .2px .2px var(--grey);
+    text-shadow: .5px .5px var(--greys);
     margin-bottom: 0;
 }
 
@@ -205,15 +233,26 @@ h5 {
         justify-content: space-around;
     }
     #projectsContainer {
-        flex: 4;
-        margin: 40px 20px 40px 20px;
+        flex: 3;
+        margin: 30px 20px 30px 20px;
+    }
+    .anatomyContent {
+        text-align: center;
     }
     #columnContainer {
+        display: flex;
         flex: 2;
         margin: 20px;
+        width: fit-content;
+        flex-direction: row;
+    }
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
     }
     header {
         display: flex;
+        flex: 1;
         justify-content: center;
         align-items: center;
         flex-direction: row-reverse;
@@ -231,11 +270,14 @@ h5 {
         padding: 10px;
         font-size: 50px;
     }
-    #contactContainer {
-        width: 300px;
-    }
     .liveImage {
         height: 350px;
+    }
+    .projectLinks {
+        text-align: center;
+    }
+    footer {
+        flex-direction: row;
     }
 }
 
@@ -248,10 +290,32 @@ h5 {
         height: 130px;
         display: block;
     }
-    header {
-        height: 175px;
-    }
     .liveImage {
         height: 500px;
+    }
+    .projectLinks {
+        text-align: center;
+    }
+    footer {
+        display: none;
+    }
+    #bioContainer {
+        width: 350px;
+    }
+    .bigScreen {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--whiteOp);
+        text-align: center;
+        padding: 5px;
+        width: fit-content;
+        height: fit-content;
+        margin: 30px auto 30px auto;
+        border-radius: 8px;
+        color: var(--dark);
+    }
+    #columnContainer {
+        display: flex;
+        flex-direction: column;
     }
 }
