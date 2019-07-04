@@ -1,13 +1,7 @@
-//insert text depending on time of day
-//create date
-
-
 let greeting;
 let date = new Date();
 let currentHour = date.getHours();
 
-//display the section on load, then transition and hide it
-//create html
 function greetingDisplay() {
     if (currentHour >= 5 && currentHour < 10) {
         greeting = 'Good Morning!'
@@ -25,31 +19,16 @@ function greetingDisplay() {
     console.log('hi');
 }
 
-// function start() {
-//     $('.fade').fadeOut(10);
-//     $('h2').fadeIn(4000);
-//     $('.fade').fadeIn(4000);
-//     $('h1').fadeToggle(1200, greetingDisplay);
-//     $('h1').fadeToggle(2000, header);
+function greetingFade() {
+    $('#welcome').fadeOut(1000, greetingDisplay);
+    $('#welcome').fadeIn(900, function() {
+        $(this).trigger("fadeInComplete");
+        console.log('bye');
+    });
+    $(document).on("fadeInComplete", function() {
 
-
-
-// };
-
-
-//hide the portfolio and display start screen
-
-
-
-function createSite() {
-    // start();
-
-
-
-
-    $('#welcome').fadeOut(800, greetingDisplay);
-    $('#welcome').fadeIn(800, greetingDisplay);
-
-
+        window.location.assign("index.html");
+    });
 }
-$(createSite());
+
+$(greetingFade());
