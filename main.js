@@ -20,15 +20,16 @@ function greetingDisplay() {
 }
 
 function greetingFade() {
-    $('#welcome').fadeOut(1000, greetingDisplay);
-    $('#welcome').fadeIn(900, function() {
+    $('#welcome').fadeOut(800, greetingDisplay);
+    $('#welcome').fadeIn(1900, function() {
         $(this).trigger("fadeInComplete");
         console.log('bye');
     });
     $(document).on("fadeInComplete", function() {
-
         window.location.assign("index.html");
     });
-}
 
+    $('body').fadeOut(1900)
+    $('body').fadeIn(800);
+}
 $(greetingFade());
