@@ -124,10 +124,8 @@ h1 {
 }
 
 .contacts {
-    width: fit-content;
-    margin: auto;
     display: flex;
-    padding: 5px;
+    justify-content: space-evenly;
 }
 
 address.contact {
