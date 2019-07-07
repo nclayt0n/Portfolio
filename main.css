@@ -1,300 +1,301 @@
-              :root {
-                 --white: rgb(255, 255, 255);
-                 --light: rgb(30, 182, 151);
-                 --medium: rgb(4, 108, 154);
-                 --dark: rgb(4, 108, 154);
-                 --red: rgb(180, 63, 19);
-                 --grey: rgb(165, 165, 165);
-                 --whiteOp: rgb(255, 255, 255, .7);
-                 --lightOp: rgb(30, 182, 151, .7);
-                 --mediumOp: rgb(4, 108, 154, .7);
-                 --darkOp: rgb(4, 108, 154, .7);
-                 --redOp: rgb(180, 63, 19, .7);
-                 --greyOp: rgb(165, 165, 165, .7);
-             }
-             
-             * {
-                 box-sizing: border-box;
-                 text-decoration: none;
-                 font-weight: bold;
-                 text-shadow: .25px .5px var(--dark);
-                 font-family: 'verdana';
-             }
-             
-             #welcome {
-                 display: flex;
-                 justify-content: center;
-                 text-align: center;
-                 margin: 150px;
-                 line-height: 55px;
-                 padding: 50px;
-                 font-size: 60px;
-                 color: white;
-                 text-shadow: 2px 1px var(--dark);
-                 font-weight: bold;
-                 background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
-                 background-repeat: no-repeat;
-                 background-size: cover;
-                 background-attachment: fixed;
-                 background-position: center;
-             }
-             
-             body {
-                 background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
-                 background-repeat: no-repeat;
-                 background-size: cover;
-                 background-attachment: fixed;
-                 background-position: center;
-                 line-height: 30px;
-                 color: var(--medium);
-                 letter-spacing: .9px;
-             }
-             
-             .verticalLine {
-                 padding: 0;
-                 margin: 0;
-                 color: #B43F13;
-                 text-align: center;
-                 letter-spacing: 0px;
-             }
-             
-             main {
-                 text-align: center;
-             }
-             
-             a {
-                 cursor: pointer;
-                 font-size: 16px;
-                 font-style: normal;
-             }
-             
-             a:hover {
-                 text-shadow: 1px 1px rgb(29, 5, 29);
-             }
-             
-             .liveImage {
-                 height: 200px;
-                 border-radius: 2px;
-             }
-             /*header*/
-             
-             #header {
-                 text-align: center;
-                 height: fit-content;
-                 width: 100%;
-                 padding: 10px;
-                 background-color: var(--darkOp);
-                 border-radius: 8px;
-             }
-             
-             h1 {
-                 color: var(--white);
-                 font-size: 40px;
-                 line-height: 40px;
-             }
-             
-             #headerImg {
-                 border-radius: 150px;
-                 height: 100px;
-                 display: none;
-                 /*if display: none; is taken off, header height:225px;*/
-             }
-             /*contact*/
-             
-             #contactContainer {
-                 background-color: var(--whiteOp);
-                 text-align: center;
-                 padding: 15px;
-                 border-radius: 8px;
-                 color: rgb(14, 156, 170, .7);
-             }
-             
-             .contacts {
-                 display: flex;
-                 justify-content: space-evenly;
-             }
-             
-             a.contactLink {
-                 font-size: 14px;
-             }
-             
-             .contactLink {
-                 color: rgb(14, 156, 170);
-                 text-align: left;
-                 display: flex;
-             }
-             
-             #githubIcon,
-             #outlookIcon,
-             #linkedInIcon,
-             #githubIcon2,
-             #outlookIcon2,
-             #linkedInIcon2 {
-                 height: 16px;
-                 text-align: center;
-             }
-             
-             .icon {
-                 height: 40px;
-                 border-radius: 3px;
-                 margin: 5px;
-             }
-             
-             .bigScreen {
-                 display: none;
-             }
-             /*bio*/
-             
-             #bioContainer {
-                 background-color: var(--greyOp);
-                 width: 300px;
-                 margin: 30px auto 30px auto;
-                 padding: 30px;
-                 border-radius: 8px;
-                 color: var(--white);
-                 height: fit-content;
-             }
-             
-             .bio {
-                 font-size: 16px;
-                 text-align: left;
-             }
-             
-             #iconContainer {
-                 /*p and icons*/
-                 margin: auto;
-                 width: fit-content;
-                 text-align: left;
-             }
-             /*projects*/
-             
-             #projectsContainer {
-                 background-color: rgb(14, 156, 170, .7);
-                 width: 300px;
-                 margin: 30px auto 30px auto;
-                 padding: 30px;
-                 border-radius: 8px;
-                 color: var(--white);
-             }
-             
-             .projectLinks {
-                 color: var(--white);
-             }
-             
-             h2 {
-                 margin-bottom: 0;
-                 font-size: 26px;
-             }
-             
-             h3 {
-                 font-size: 32px;
-                 margin-bottom: 0;
-             }
-             
-             h4 {
-                 font-size: 24px;
-                 color: var(--dark);
-                 text-shadow: .5px .5px var(--greys);
-                 margin-bottom: 0;
-             }
-             
-             h5 {
-                 margin: 10px 0 0 0;
-                 font-size: 20px;
-             }
-             
-             @media screen and (min-width:750px) {
-                 main {
-                     display: flex;
-                     justify-content: space-around;
-                 }
-                 #projectsContainer {
-                     flex: 3;
-                     margin: 30px 20px 30px 20px;
-                 }
-                 .anatomyContent {
-                     text-align: center;
-                 }
-                 #columnContainer {
-                     display: flex;
-                     flex: 2;
-                     margin: 20px;
-                     width: fit-content;
-                     flex-direction: row;
-                 }
-                 h5 {
-                     margin: 5px 0 0 0;
-                     font-size: 20px;
-                 }
-                 .contact {
-                     display: flex;
-                     justify-content: space-evenly;
-                 }
-                 a.contactLink {
-                     font-size: 16px;
-                 }
-                 header {
-                     display: flex;
-                     flex: 1;
-                     align-items: center;
-                     flex-direction: row-reverse;
-                     margin-right: 10px;
-                     justify-content: space-around;
-                 }
-                 #headerImg {
-                     margin: 5px;
-                     padding: 5px;
-                     height: 130px;
-                     display: block;
-                 }
-                 h1 {
-                     padding: 10px;
-                     font-size: 50px;
-                 }
-                 .liveImage {
-                     height: 350px;
-                 }
-                 .projectLinks {
-                     text-align: center;
-                 }
-                 footer {
-                     flex-direction: row;
-                 }
-             }
-             
-             @media screen and (min-width:1000px) {
-                 h1 {
-                     font-size: 60px;
-                     margin-right: 50px;
-                 }
-                 #headerImg {
-                     height: 130px;
-                     display: block;
-                 }
-                 .liveImage {
-                     height: 500px;
-                 }
-                 .projectLinks {
-                     text-align: center;
-                 }
-                 footer {
-                     display: none;
-                 }
-                 #bioContainer {
-                     width: 350px;
-                 }
-                 .bigScreen {
-                     display: flex;
-                     flex-direction: column;
-                     width: fit-content;
-                     height: fit-content;
-                     margin: 30px auto 30px auto;
-                 }
-                 #columnContainer {
-                     display: flex;
-                     flex-direction: column;
-                 }
-                 .contacts {
-                     margin: 5px;
-                 }
-             }
+                 :root {
+                    --white: rgb(255, 255, 255);
+                    --light: rgb(30, 182, 151);
+                    --medium: rgb(4, 108, 154);
+                    --dark: rgb(4, 108, 154);
+                    --red: rgb(180, 63, 19);
+                    --grey: rgb(165, 165, 165);
+                    --whiteOp: rgb(255, 255, 255, .7);
+                    --lightOp: rgb(30, 182, 151, .7);
+                    --mediumOp: rgb(4, 108, 154, .7);
+                    --darkOp: rgb(4, 108, 154, .7);
+                    --redOp: rgb(180, 63, 19, .7);
+                    --greyOp: rgb(165, 165, 165, .7);
+                }
+                
+                * {
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    font-weight: bold;
+                    text-shadow: .25px .5px var(--dark);
+                    font-family: 'verdana';
+                }
+                
+                #welcome {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 150px;
+                    line-height: 55px;
+                    padding: 50px;
+                    font-size: 60px;
+                    color: white;
+                    text-shadow: 2px 1px var(--dark);
+                    font-weight: bold;
+                    background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+                
+                body {
+                    background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    background-position: center;
+                    line-height: 30px;
+                    color: var(--medium);
+                    letter-spacing: .9px;
+                }
+                
+                .verticalLine {
+                    padding: 0;
+                    margin: 0;
+                    color: #B43F13;
+                    text-align: center;
+                    letter-spacing: 0px;
+                }
+                
+                main {
+                    text-align: center;
+                }
+                
+                a {
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-style: normal;
+                }
+                
+                a:hover {
+                    text-shadow: 1px 1px rgb(29, 5, 29);
+                }
+                
+                .liveImage {
+                    height: 200px;
+                    border-radius: 2px;
+                }
+                /*header*/
+                
+                #header {
+                    text-align: center;
+                    height: fit-content;
+                    width: 100%;
+                    padding: 10px;
+                    background-color: var(--darkOp);
+                    border-radius: 8px;
+                }
+                
+                h1 {
+                    color: var(--white);
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+                
+                #headerImg {
+                    border-radius: 150px;
+                    height: 100px;
+                    display: none;
+                    /*if display: none; is taken off, header height:225px;*/
+                }
+                /*contact*/
+                
+                .contactContainer,
+                #contactContainer {
+                    background-color: var(--whiteOp);
+                    text-align: center;
+                    padding: 15px;
+                    border-radius: 8px;
+                    color: rgb(14, 156, 170, .7);
+                }
+                
+                .contacts {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                
+                a.contactLink {
+                    font-size: 14px;
+                }
+                
+                .contactLink {
+                    color: rgb(14, 156, 170);
+                    text-align: left;
+                    display: flex;
+                }
+                
+                #githubIcon,
+                #outlookIcon,
+                #linkedInIcon,
+                #githubIcon2,
+                #outlookIcon2,
+                #linkedInIcon2 {
+                    height: 16px;
+                    text-align: center;
+                }
+                
+                .icon {
+                    height: 40px;
+                    border-radius: 3px;
+                    margin: 5px;
+                }
+                
+                .bigScreen {
+                    display: none;
+                }
+                /*bio*/
+                
+                #bioContainer {
+                    background-color: var(--greyOp);
+                    width: 300px;
+                    margin: 30px auto 30px auto;
+                    padding: 30px;
+                    border-radius: 8px;
+                    color: var(--white);
+                    height: fit-content;
+                }
+                
+                .bio {
+                    font-size: 16px;
+                    text-align: left;
+                }
+                
+                #iconContainer {
+                    /*p and icons*/
+                    margin: auto;
+                    width: fit-content;
+                    text-align: left;
+                }
+                /*projects*/
+                
+                #projectsContainer {
+                    background-color: rgb(14, 156, 170, .7);
+                    width: 300px;
+                    margin: 30px auto 30px auto;
+                    padding: 30px;
+                    border-radius: 8px;
+                    color: var(--white);
+                }
+                
+                .projectLinks {
+                    color: var(--white);
+                }
+                
+                h2 {
+                    margin-bottom: 0;
+                    font-size: 26px;
+                }
+                
+                h3 {
+                    font-size: 32px;
+                    margin-bottom: 0;
+                }
+                
+                h4 {
+                    font-size: 24px;
+                    color: var(--dark);
+                    text-shadow: .5px .5px var(--greys);
+                    margin-bottom: 0;
+                }
+                
+                h5 {
+                    margin: 10px 0 0 0;
+                    font-size: 20px;
+                }
+                
+                @media screen and (min-width:750px) {
+                    main {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                    #projectsContainer {
+                        flex: 3;
+                        margin: 30px 20px 30px 20px;
+                    }
+                    .anatomyContent {
+                        text-align: center;
+                    }
+                    #columnContainer {
+                        display: flex;
+                        flex: 2;
+                        margin: 20px;
+                        width: fit-content;
+                        flex-direction: row;
+                    }
+                    h5 {
+                        margin: 5px 0 0 0;
+                        font-size: 20px;
+                    }
+                    .contact {
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+                    a.contactLink {
+                        font-size: 16px;
+                    }
+                    header {
+                        display: flex;
+                        flex: 1;
+                        align-items: center;
+                        flex-direction: row-reverse;
+                        margin-right: 10px;
+                        justify-content: space-around;
+                    }
+                    #headerImg {
+                        margin: 5px;
+                        padding: 5px;
+                        height: 130px;
+                        display: block;
+                    }
+                    h1 {
+                        padding: 10px;
+                        font-size: 50px;
+                    }
+                    .liveImage {
+                        height: 350px;
+                    }
+                    .projectLinks {
+                        text-align: center;
+                    }
+                    footer {
+                        flex-direction: row;
+                    }
+                }
+                
+                @media screen and (min-width:1000px) {
+                    h1 {
+                        font-size: 60px;
+                        margin-right: 50px;
+                    }
+                    #headerImg {
+                        height: 130px;
+                        display: block;
+                    }
+                    .liveImage {
+                        height: 500px;
+                    }
+                    .projectLinks {
+                        text-align: center;
+                    }
+                    footer {
+                        display: none;
+                    }
+                    #bioContainer {
+                        width: 350px;
+                    }
+                    .bigScreen {
+                        display: flex;
+                        flex-direction: column;
+                        width: fit-content;
+                        height: fit-content;
+                        margin: 30px auto 30px auto;
+                    }
+                    #columnContainer {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .contacts {
+                        margin: 5px;
+                    }
+                }
