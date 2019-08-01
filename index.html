@@ -10,20 +10,19 @@
 </head>
 
 <body>
-
     <header id="header">
-        <h1>Nicole Clayton</h1>
+        <h1 class="name">Nicole Clayton</h1>
         <img src="images/croppedStandinPhto.jpg" alt="Photo of Nicole Clayton" id="headerImg">
     </header>
     <main>
-
         <div id="columnContainer">
             <section id="bioContainer">
-                <h2>Hi, I'm Nicole.</h2>
+                <h2 class="greeting">Hi, I'm Nicole.</h2>
+                <h2 class="welcome hidden"></h2>
                 <p class="verticalLine">________</p>
-                <p class="bio">I am a driven web developer who loves learning new things! Coding has become an engaging, and joyful part of my everyday. Being able to create something, no matter how big or how small, is so rewarding. I love that 'aha' moment when everything
-                    comes together. It is exciting to me, and I'm eager to dive in and be a part of a great team of programmers!</p>
-                <p class="bio">When I'm not coding, you can find me reading, running, or playing with my little guys. </p>
+                <p class="bio">I am a driven web developer who loves learning new things! Coding has become an engaging part of my everyday. Being able to create something, no matter how big or how small, is so rewarding. I love that 'aha' moment when everything comes
+                    together. It is exciting to me, and I'm eager to dive in and be a part of a great team of programmers!</p>
+                <p class="bio">When I'm not coding, you can find me reading, running, baking, or playing board games . </p>
 
                 <p class="bio"> Currently working with Html, CSS, Javascript, and JQuery.</p>
                 <div id="iconContainer">
@@ -49,22 +48,25 @@
         <section id="projectsContainer">
             <h3>Projects</h3>
             <p class="verticalLine">________</p>
-            <h4>Anatomy Quiz</h4>
-            <p class="anatomyContent">The Anatomy Quiz is a series of questions, testing your anatomy knowledge.</p>
-            <p class="anatomyContent">It is built with HTML, CSS, Javascript, and JQuery.</p>
-            <div id="repoImgContainer">
-                <img id="liveImage" src="images/anatomyQuiz1.png" alt="quizquestion"></div>
+            <button id="anatomyButton">Anatomy Quiz</button>
+            <section class="anatomyQuizDescription">
+                <p class="anatomyContent">The Anatomy Quiz is a series of questions, testing your anatomy knowledge.</p>
+                <p class="anatomyContent">It is built with HTML, CSS, Javascript, and JQuery.</p>
+                <div id="repoImgContainer">
+                    <img id="liveImage" src="images/anatomyQuiz1.png" alt="quizquestion"></div>
 
-            <a href="https://github.com/nclayt0n/BlocQuiz" class="projectLinks" target="_blank">Click here to look at the Repository</a>
-            <br> <a href="https://nclayt0n.github.io/BlocQuiz/" class="projectLinks" target="_blank">Click here to look at the live page</a>
-            <h4>From API to IPA</h4>
-            <p class="ipaContent"></p>
-            <p class="ipaContent">It is built with HTML, CSS, Javascript, and JQuery.</p>
-            <div id="repoImgContainer">
-                <img class="ipaImage" src="images/ipascreenshot2.png" alt="API to IPA app brewery search"></div>
+                <a href="https://github.com/nclayt0n/BlocQuiz" class="projectLinks" target="_blank">Click here to look at the Repository</a>
+                <br> <a href="https://nclayt0n.github.io/BlocQuiz/" class="projectLinks" target="_blank">Click here to look at the live page</a></section>
 
-            <a href="https://github.com/nclayt0n/IPA" class="projectLinks" target="_blank">Click here to look at the Repository</a>
-            <br> <a href="https://nclayt0n.github.io/IPA/" class="projectLinks" target="_blank">Click here to look at the live page</a>
+            <button id="IPAButton">API to IPA</button>
+            <section class="IPADescription">
+                <p class="ipaContent">From API to IPA is an app that allows you to search for Breweries by City and, or State. This app can also search through BeerDog's Database of Beers.</p>
+                <p class="ipaContent">It is built with HTML, CSS, Javascript, and JQuery.</p>
+                <div id="repoImgContainer">
+                    <img class="ipaImage" src="images/ipascreenshot2.png" alt="API to IPA app brewery search"></div>
+
+                <a href="https://github.com/nclayt0n/IPA" class="projectLinks" target="_blank">Click here to look at the Repository</a>
+                <br> <a href="https://nclayt0n.github.io/IPA/" class="projectLinks" target="_blank">Click here to look at the live page</a></section>
         </section>
 
 

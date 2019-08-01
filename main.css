@@ -1,16 +1,13 @@
 :root {
     --white: rgb(255, 255, 255);
-    --light: rgb(30, 182, 151);
     --medium: rgb(4, 108, 154);
     --dark: rgb(4, 108, 154);
-    --red: rgb(180, 63, 19);
-    --grey: rgb(165, 165, 165);
-    --whiteOp: rgb(255, 255, 255, .7);
-    --lightOp: rgb(30, 182, 151, .7);
-    --mediumOp: rgb(4, 108, 154, .7);
-    --darkOp: rgb(4, 108, 154, .7);
-    --redOp: rgb(180, 63, 19, .7);
-    --greyOp: rgb(165, 165, 165, .7);
+    --grey: #74899f;
+    --whiteOp: rgb(255, 255, 255, .8);
+    --mediumOp: rgb(4, 108, 154, .8);
+    --darkOp: rgb(4, 108, 154, .8);
+    --blueOp: #1c3e61e8;
+    --greyOp: #74899fd3;
 }
 
 * {
@@ -25,26 +22,13 @@
     width: 250px;
 }
 
-#welcome {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 150px;
-    line-height: 55px;
-    padding: 50px;
-    font-size: 60px;
-    color: white;
-    text-shadow: 2px 1px var(--dark);
-    font-weight: bold;
-    background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+.hidden {
+    display: none;
 }
 
 body {
     background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
+    background-image: url('images/blue-landscape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -128,7 +112,7 @@ a.contactLink {
 }
 
 .contactLink {
-    color: rgb(14, 156, 170);
+    color: var(--dark);
     text-align: left;
     display: flex;
 }
@@ -167,7 +151,7 @@ a.contactLink {
 }
 
 .bio {
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
 }
 
@@ -182,12 +166,36 @@ a.contactLink {
 /*projects*/
 
 #projectsContainer {
-    background-color: rgb(14, 156, 170, .7);
+    background-color: var(--blueOp);
     width: 300px;
+    height: fit-content;
     margin: 30px auto 30px auto;
-    padding: 30px;
+    padding: 30px 30px 50px 30px;
     border-radius: 8px;
     color: var(--white);
+}
+
+button {
+    font-size: 24px;
+    color: var(--dark);
+    text-shadow: .5px .5px var(--grey);
+    padding: 8px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--whiteOp);
+    border-radius: 6px;
+    border: 1px solid var(--dark);
+    box-shadow: 1px 1px grey;
+    display: flex;
+}
+
+button:hover {
+    text-shadow: 1px 1px rgb(29, 5, 29);
+    cursor: pointer;
+}
+
+#IPAButton {
+    margin-top: 75px;
 }
 
 .projectLinks {
@@ -204,13 +212,6 @@ h3 {
     margin-bottom: 0;
 }
 
-h4 {
-    font-size: 24px;
-    color: var(--dark);
-    text-shadow: .5px .5px var(--grey);
-    margin-bottom: 0;
-}
-
 h5 {
     margin: 10px 0 0 0;
     font-size: 20px;
@@ -224,6 +225,7 @@ h5 {
     #projectsContainer {
         flex: 3;
         margin: 30px 20px 30px 20px;
+        padding: 50px;
     }
     .anatomyContent,
     .ipaContent {
@@ -265,11 +267,13 @@ h5 {
         padding: 10px;
         font-size: 50px;
     }
-    #liveImage {
-        height: 350px;
+    #bioContainer {
+        width: 350px;
+        position: sticky;
+        top: 0;
     }
-    .ipaImage {
-        width: 300px;
+    #liveImage {
+        height: 275px;
     }
     .projectLinks {
         text-align: center;
@@ -297,19 +301,16 @@ h5 {
     .projectLinks {
         text-align: center;
     }
-    footer {
+    /* footer {
         display: none;
-    }
-    #bioContainer {
-        width: 350px;
-    }
-    .bigScreen {
+    } */
+    /* .bigScreen {
         display: flex;
         flex-direction: column;
         width: fit-content;
         height: fit-content;
         margin: 30px auto 30px auto;
-    }
+    } */
     #columnContainer {
         display: flex;
         flex-direction: column;
