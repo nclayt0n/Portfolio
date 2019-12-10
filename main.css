@@ -266,7 +266,7 @@ h5 {
     font-size: 20px;
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:720px) {
     #githubIcon,
     #outlookIcon,
     #linkedInIcon {
@@ -292,7 +292,6 @@ h5 {
     #projectsContainer {
         flex: 3;
         margin: 30px 20px 30px 20px;
-        padding: 50px;
     }
     .anatomyContent,
     .ipaContent {
@@ -336,29 +335,26 @@ h5 {
         font-size: 50px;
     }
     #bioSection {
-        width: 350px;
+        width: 300px;
         position: sticky;
         top: 0;
     }
     .projectLinksContainer {
-        padding: 15px;
-    }
-    .projectLinks {
-        margin: 10px auto;
+        padding: 10px;
     }
     #ipaImage,
     #userDirectoryImage {
-        height: 140px;
+        height: 300px;
     }
     #recipeBoxImage {
-        height: 190px;
+        height: 300px;
     }
     footer {
         flex-direction: row;
     }
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:950px) {
     h1 {
         font-size: 60px;
         margin-right: 50px;
@@ -367,11 +363,16 @@ h5 {
         height: 130px;
         display: block;
     }
+    #bioSection {
+        width: 400px;
+        position: sticky;
+        top: 0;
+    }
     #ipaImage,
     #userDirectoryImage,
     #recipeBoxImage {
         height: 260px;
-        width: 360px;
+        width: 340px;
     }
     .projectLinksContainer {
         padding: 65px;
@@ -382,6 +383,10 @@ h5 {
     #bioContainer {
         display: flex;
         flex-direction: column;
+    }
+    .contents {
+        padding: 10px;
+        margin: 10px;
     }
     .contacts {
         margin: 5px;
