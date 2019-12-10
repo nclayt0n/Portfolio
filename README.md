@@ -1,7 +1,6 @@
 ## `Introduction`
 Created by Nicole Clayton<br/>
 https://nclayt0n.github.io/Portfolio/
-
 July 1, 2019
 
 ### Purpose
@@ -12,5 +11,4 @@ The reason for this Portfolio is to showcase my abilities, and inform of my expe
 HTML, CSS, JS
 
 
-___________
-Always a joy to create something new to share with others.
+#### `Thank you so much for your time`
