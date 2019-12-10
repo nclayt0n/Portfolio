@@ -217,7 +217,7 @@ button:hover {
 }
 
 #userDirectoryImage {
-    background-image: url("/images/UserDirectory.png");
+    background-image: url("images/UserDirectory.png");
     background-size: 100%;
     margin: auto;
     margin-bottom: 50px;
@@ -227,7 +227,7 @@ button:hover {
 }
 
 #recipeBoxImage {
-    background-image: url("/images/RBhomepage.png");
+    background-image: url("images/RBhomepage.png");
     background-size: 100%;
     margin: auto;
     margin-bottom: 50px;
@@ -237,7 +237,7 @@ button:hover {
 }
 
 #ipaImage {
-    background-image: url("/images/ipa.png");
+    background-image: url("images/ipa.png");
     background-size: 100%;
     margin: auto;
     margin-bottom: 50px;
