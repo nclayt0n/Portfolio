@@ -12,7 +12,7 @@ The reason for this Portfolio is to showcase my abilities, and inform of my expe
 
 Technologies
 ___________
-HTML, CSS
+HTML, CSS, JS
 
 
 ___________
