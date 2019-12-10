@@ -1,7 +1,7 @@
 ## `Introduction`
 Created by Nicole Clayton<br/>
-https://nclayt0n.github.io/Portfolio/
-July 1, 2019
+https://nclayt0n.github.io/Portfolio/ <br/>
+last updated: December 10, 2019
 
 ### Purpose
 The reason for this Portfolio is to showcase my abilities, and inform of my experience.
