@@ -37,11 +37,9 @@ function projectButtonToggle() {
 
 function projectImageHover() {
     $('.liveImgContainer').mouseenter(event => {
-        console.log(event.target.children);
         $(event.target.children).removeClass('hidden');
     });
     $('.liveImgContainer').mouseleave(event => {
-        console.log(event.target.children);
         $('.projectLinksContainer').addClass('hidden');
     });
 
