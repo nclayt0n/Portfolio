@@ -8,6 +8,8 @@
     --darkOp: rgb(4, 108, 154, .8);
     --blueOp: #1c3e61e8;
     --greyOp: #74899fd3;
+    --transparentWhite: rgba(255, 255, 255, 0.6);
+    --darker: rgb(2, 78, 110);
 }
 
 * {
@@ -18,16 +20,11 @@
     font-family: 'verdana';
 }
 
-.ipaImage {
-    width: 250px;
-}
-
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 body {
-    background-image: url('images/red-and-blue-shoreline-iphone-screen.jpg');
     background-image: url('images/blue-landscape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,15 +51,14 @@ a {
     cursor: pointer;
     font-size: 16px;
     font-style: normal;
+    align-content: center;
+    line-height: 24px;
+    margin-bottom: 20px;
 }
 
 a:hover {
-    text-shadow: 1px 1px rgb(29, 5, 29);
-}
-
-#liveImage {
-    height: 200px;
-    border-radius: 2px;
+    text-shadow: .25px .25px var(--white);
+    letter-spacing: 1.25px;
 }
 
 
@@ -108,7 +104,7 @@ h1 {
 }
 
 a.contactLink {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .contactLink {
@@ -119,31 +115,27 @@ a.contactLink {
 
 #githubIcon,
 #outlookIcon,
-#linkedInIcon,
-#githubIcon2,
-#outlookIcon2,
-#linkedInIcon2 {
-    height: 16px;
+#linkedInIcon {
+    height: 28px;
     text-align: center;
-}
-
-.icon {
-    height: 40px;
-    border-radius: 3px;
-    margin: 5px;
+    border-radius: 5px;
 }
 
 .bigScreen {
     display: none;
 }
 
+.contactDestination {
+    display: none;
+}
+
 
 /*bio*/
 
-#bioContainer {
+#bioSection {
     background-color: var(--greyOp);
     width: 300px;
-    margin: 30px auto 30px auto;
+    margin: 30px auto;
     padding: 30px;
     border-radius: 8px;
     color: var(--white);
@@ -151,8 +143,14 @@ a.contactLink {
 }
 
 .bio {
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
+}
+
+.bio span {
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 #iconContainer {
@@ -175,6 +173,13 @@ a.contactLink {
     color: var(--white);
 }
 
+.content {
+    text-align: left;
+    padding: 5px;
+    letter-spacing: 1.75px;
+    margin: 5px;
+}
+
 button {
     font-size: 24px;
     color: var(--dark);
@@ -190,16 +195,57 @@ button {
 }
 
 button:hover {
-    text-shadow: 1px 1px rgb(29, 5, 29);
+    text-shadow: 1px 1px var(--white);
+    font-size: 26px;
+    letter-spacing: 1px;
     cursor: pointer;
 }
 
-#IPAButton {
-    margin-top: 75px;
+.projectLinksContainer {
+    background-color: var(--greyOp);
+    width: 100%;
+    height: 100%;
+    padding: 40px;
 }
 
 .projectLinks {
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
     color: var(--white);
+    border-radius: 6px;
+    font-size: 22px;
+    margin: auto;
+}
+
+#userDirectoryImage {
+    background-image: url("/images/UserDirectory.png");
+    background-size: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 170px;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+}
+
+#recipeBoxImage {
+    background-image: url("/images/RBhomepage.png");
+    background-size: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 190px;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+}
+
+#ipaImage {
+    background-image: url("/images/ipa.png");
+    background-size: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 170px;
+    background-repeat: no-repeat;
+    border-radius: 2px;
 }
 
 h2 {
@@ -222,7 +268,25 @@ h5 {
     font-size: 20px;
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:700px) {
+    #githubIcon,
+    #outlookIcon,
+    #linkedInIcon {
+        height: 21px;
+        text-align: center;
+        margin: 2px;
+        border-radius: 5px;
+    }
+    .contactDestination {
+        display: contents;
+        font-size: 20px;
+    }
+    .contactDestination:hover {
+        text-shadow: 1px 1px var(--white);
+        cursor: pointer;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
     main {
         display: flex;
         justify-content: space-around;
@@ -236,7 +300,7 @@ h5 {
     .ipaContent {
         text-align: center;
     }
-    #columnContainer {
+    #bioContainer {
         display: flex;
         flex: 2;
         margin: 20px;
@@ -253,6 +317,7 @@ h5 {
     }
     a.contactLink {
         font-size: 16px;
+        margin: auto;
     }
     header {
         display: flex;
@@ -272,23 +337,30 @@ h5 {
         padding: 10px;
         font-size: 50px;
     }
-    #bioContainer {
+    #bioSection {
         width: 350px;
         position: sticky;
         top: 0;
     }
-    #liveImage {
-        height: 275px;
+    .projectLinksContainer {
+        padding: 15px;
     }
     .projectLinks {
-        text-align: center;
+        margin: 10px auto;
+    }
+    #ipaImage,
+    #userDirectoryImage {
+        height: 140px;
+    }
+    #recipeBoxImage {
+        height: 190px;
     }
     footer {
         flex-direction: row;
     }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:900px) {
     h1 {
         font-size: 60px;
         margin-right: 50px;
@@ -297,26 +369,19 @@ h5 {
         height: 130px;
         display: block;
     }
-    #liveImage {
-        height: 500px;
+    #ipaImage,
+    #userDirectoryImage,
+    #recipeBoxImage {
+        height: 260px;
+        width: 360px;
     }
-    .ipaImage {
-        width: 420px;
+    .projectLinksContainer {
+        padding: 65px;
     }
     .projectLinks {
-        text-align: center;
+        font-size: 32px;
     }
-    /* footer {
-        display: none;
-    } */
-    /* .bigScreen {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        height: fit-content;
-        margin: 30px auto 30px auto;
-    } */
-    #columnContainer {
+    #bioContainer {
         display: flex;
         flex-direction: column;
     }

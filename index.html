@@ -15,76 +15,75 @@
         <img src="images/croppedself.jpeg" alt="Photo of Nicole Clayton" id="headerImg">
     </header>
     <main>
-        <div id="columnContainer">
-            <section id="bioContainer">
-                <h2 class="greeting">Hi, I'm Nicole.</h2>
-                <h2 class="welcome hidden"></h2>
+        <div id="bioContainer">
+            <section id="bioSection">
+                <h2 class="greeting">Hi, I'm Nicole</h2>
                 <p class="horizontalLine">________</p>
-                <p class="bio">I am a driven Web Developer who loves learning new things! Coding has become an engaging part of my everyday. Being able to create something, and to constantly be challenged, is so rewarding. I love that 'aha' moment when everything comes
-                    together! It is exciting to me, and I'm eager to dive in and be a part of a great team of Programmers!</p>
+                <p class="bio">A driven Web Developer who loves learning new things! Coding has become an engaging part of my everyday. Being able to create something, and to constantly be challenged, is so rewarding. I love that 'aha' moment when everything comes together!
+                    It is exciting to me, and I'm eager to dive in and be a part of a great team of Programmers!</p>
                 <p class="bio">When I'm not coding, you can find me reading, running, playing board games, or hanging with kids. </p>
                 <h4>Current Skills:</h4>
                 <p class="bio">
-                    Front End: JavaScript ES6, React, jQuery, HTML5, CSS3, NPM <br> Back End: Node.js, Express, and PostgreSQL, TDD with Mocha, Jasmine, Jest, and Chao, RESTful APIs<br> Additional Tools: Git, GitHub, Slack</p>
-                <!-- <div id="iconContainer">
-                    <img src="images/HTMLIcon.png" alt="html icon" class="icon">
-                    <img src="images/cssLogo.png" alt="cssLogo" class="icon">
-                    <img src="images/JSLogo.png" alt="Javascipt icon" class="icon">
-                    <img src="images/JQueryIcon.png" alt="JQueryIcon" class="icon"><br>
-                    <img src="images/node.js-logo.png" alt="nodeIcon" class="icon">
-                    <img src="images/PostgreSQL-logo.gif" alt="postgresIcon" class="icon"></div> -->
-
-            </section>
-
-            <section id="contactContainer" class="bigScreen">
-                <h5>Contact Info</h5>
-                <p class="horizontalLine">________</p>
-                <div class="contacts">
-                    <address class="contact"><a class="contactLink" href="mailto:nrclayton@outlook.com"><img class="icon" id="outlookIcon2" src="images/outlookIcon.png" alt="outlookIcon">Email</a></address>
-                    <address class="contact"><a  class="contactLink" href="https://github.com/nclayt0n" target="_blank"><img src="images/githubicon.png" alt="Github Icon" class="icon" id="githubIcon2">Github</a></address>
-                    <address class="contact"><a  class="contactLink" href="https://www.linkedin.com/in/nicole-clayton/" target="_blank"><img src="images/linkedIn.png" alt="Linkedin Icon" class="icon" id="linkedInIcon2">Linkedin</a></address>
-                </div>
+                    <span>Front End:</span><br/>JavaScript ES6, React, jQuery, HTML5, CSS3, NPM <br> <span>Back End:</span><br/> Node.js, Express, and PostgreSQL, TDD with Mocha, Jest, and Chai, RESTful APIs<br>
+                    <span>Additional Tools:</span><br/> Git, GitHub, Slack
+                </p>
             </section>
         </div>
 
         <section id="projectsContainer">
             <h3>Projects</h3>
             <p class="horizontalLine">________</p>
-            <button id="anatomyButton">Anatomy Quiz</button>
-            <section class="anatomyQuizDescription">
-                <p class="anatomyContent">The Anatomy Quiz is a series of questions, testing your anatomy knowledge.</p>
-                <p class="anatomyContent">It is built with HTML, CSS, Javascript, and JQuery.</p>
-                <div id="repoImgContainer">
-                    <img id="liveImage" src="images/anatomyQuiz1.png" alt="quizquestion"></div>
 
-                <a href="https://github.com/nclayt0n/BlocQuiz" class="projectLinks" target="_blank">Click here to look at the Repository</a>
-                <br> <a href="https://nclayt0n.github.io/BlocQuiz/" class="projectLinks" target="_blank">Click here to look at the live page</a></section>
+            <button id="recipeBoxButton">Recipe Box</button>
+            <section class="recipeBoxDescription">
+                <p class="content">Recipe Box is an app that allows you to save all of your recipes securely in one place. Plan for any occasion by creating multiple folders to organize your recipes. The ingredients page allows you to sort through all, 1, or multiple recipes.
+                    It will then display all ingredients of selected recipes. Recipe Box is where you can create and store delicious memories.</p>
+                <p class="content">Front End was created using React and deployed to ZEIT Now. Back End was created using Node.js, Express.js, and PostgreSQL, deployed to heroku. </p>
+                <section class="liveImgContainer" id="recipeBoxImage">
+                    <div class="projectLinksContainer hidden">
+                        <a href="https://github.com/nclayt0n/recipe-box" class="projectLinks" target="_blank">Repository</a>
+                        <br>
+                        <a href="https://nrclayton-recipe-box.now.sh/" class="projectLinks" target="_blank">Live page</a>
+                    </div>
+                </section>
+            </section>
+
+            <button id="userDirectoryButton">User Directory</button>
+            <section class="userDirectoryDescription">
+                <p class="content">User Directory is an App utilizing randomuser.me's free, open-source API for generating random user data. This app displays 10 random users per page, and you also have the option to export those 10 users to a CSV file.</p>
+                <p class="content">It was created using React and deployed to ZEIT Now.</p>
+                <section class="liveImgContainer" id="userDirectoryImage">
+                    <div class="projectLinksContainer hidden">
+                        <a href="https://github.com/nclayt0n/user-directory" class="projectLinks" target="_blank">Repository</a>
+                        <br>
+                        <a href="https://nrclayton-user-directory.now.sh" class="projectLinks" target="_blank">Live page</a>
+                    </div>
+                </section>
+            </section>
 
             <button id="IPAButton">API to IPA</button>
             <section class="IPADescription">
-                <p class="ipaContent">From API to IPA is an app that allows you to search for Breweries by City and, or State. This app can also search through BrewDog's Database of Beers.</p>
-                <p class="ipaContent">It is built with HTML, CSS, Javascript, and JQuery.</p>
-                <div id="repoImgContainer">
-                    <img class="ipaImage" src="images/ipascreenshot2.png" alt="API to IPA app brewery search"></div>
-
-                <a href="https://github.com/nclayt0n/IPA" class="projectLinks" target="_blank">Click here to look at the Repository</a>
-                <br> <a href="https://nclayt0n.github.io/IPA/" class="projectLinks" target="_blank">Click here to look at the live page</a></section>
+                <p class="content">From API to IPA is an app that allows you to search for Breweries by City and, or State. This app can also search through BrewDog's Database of Beers.</p>
+                <p class="content">It is built with HTML, CSS, Javascript, and JQuery.</p>
+                <section class="liveImgContainer" id="ipaImage">
+                    <div class="projectLinksContainer hidden">
+                        <a href="https://github.com/nclayt0n/IPA" class="projectLinks" target="_blank">Repository</a>
+                        <br>
+                        <a href="https://nclayt0n.github.io/IPA/" class="projectLinks" target="_blank">Live page</a>
+                    </div>
+                </section>
+            </section>
         </section>
-
-
-
     </main>
     <footer class="contactContainer">
         <div class="contacts" id="contacts">
-            <address class="contact"><a class="contactLink" href="mailto:nrclayton@outlook.com"><img class="icon" id="outlookIcon" src="images/outlookIcon.png" alt="outlookIcon">Email</a></address>
-            <address class="contact"><a  class="contactLink" href="https://github.com/nclayt0n" target="_blank"><img src="images/githubicon.png" alt="Github Icon" class="icon" id="githubIcon">Github</a></address>
-            <address class="contact"><a  class="contactLink" href="https://www.linkedin.com/in/nicole-clayton/" target="_blank"><img src="images/linkedIn.png" alt="Linkedin Icon" class="icon" id="linkedInIcon">Linkedin</a></address>
+            <address class="contact"><a class="contactLink" href="mailto:nrclayton@outlook.com"><img class="icon" id="outlookIcon" src="images/outlookIcon.png" alt="outlookIcon"><span class='contactDestination'>Email</span></a></address>
+            <address class="contact"><a  class="contactLink" href="https://github.com/nclayt0n" target="_blank"><img src="images/githubicon.png" alt="Github Icon" class="icon" id="githubIcon"><span class='contactDestination'>Github</span></a></address>
+            <address class="contact"><a  class="contactLink" href="https://www.linkedin.com/in/nicole-clayton/" target="_blank"><img src="images/linkedIn.png" alt="Linkedin Icon" class="icon" id="linkedInIcon"><span class='contactDestination'>Linkedin</span></a></address>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="main.js"></script>
-
 </body>
-
 
 </html>
