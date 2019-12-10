@@ -8,8 +8,6 @@
     --darkOp: rgb(4, 108, 154, .8);
     --blueOp: #1c3e61e8;
     --greyOp: #74899fd3;
-    --transparentWhite: rgba(255, 255, 255, 0.6);
-    --darker: rgb(2, 78, 110);
 }
 
 * {
