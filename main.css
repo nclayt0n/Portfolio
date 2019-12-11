@@ -161,6 +161,13 @@ a.contactLink {
 
 /*projects*/
 
+.userDirectoryDescription,
+.recipeBoxDescription,
+.IPADescription {
+    margin: 10px auto 60px auto;
+    padding: 0;
+}
+
 #projectsContainer {
     background-color: var(--blueOp);
     width: 300px;
@@ -177,9 +184,9 @@ a.contactLink {
 
 .content {
     text-align: left;
-    padding: 5px;
+    /* padding: 5px;
+    margin: 5px; */
     letter-spacing: 1.75px;
-    margin: 5px;
 }
 
 button {
@@ -206,8 +213,8 @@ button:hover {
 .projectLinksContainer {
     background-color: var(--greyOp);
     width: 100%;
-    height: 100%;
-    padding: 40px;
+    height: 150px;
+    padding: 5px;
 }
 
 .projectLinks {
@@ -217,37 +224,27 @@ button:hover {
     color: var(--white);
     border-radius: 6px;
     font-size: 22px;
-    margin: auto;
+    margin: 15px;
 }
 
 #userDirectoryImage {
     background-image: url("images/UserDirectory.png");
+}
+
+.liveImgContainer {
     background-size: 100%;
     margin: auto;
-    margin-bottom: 30px;
-    height: 170px;
+    height: 150px;
     background-repeat: no-repeat;
     border-radius: 2px;
 }
 
 #recipeBoxImage {
     background-image: url("images/RBhomepage.png");
-    background-size: 100%;
-    margin: auto;
-    margin-bottom: 30px;
-    height: 190px;
-    background-repeat: no-repeat;
-    border-radius: 2px;
 }
 
 #ipaImage {
     background-image: url("images/ipa.png");
-    background-size: 100%;
-    margin: auto;
-    margin-bottom: 30px;
-    height: 170px;
-    background-repeat: no-repeat;
-    border-radius: 2px;
 }
 
 h2 {
@@ -346,13 +343,6 @@ h5 {
     .projectLinksContainer {
         padding: 10px;
     }
-    #ipaImage,
-    #userDirectoryImage {
-        height: 300px;
-    }
-    #recipeBoxImage {
-        height: 300px;
-    }
     footer {
         flex-direction: row;
     }
@@ -375,27 +365,25 @@ h5 {
     .bio {
         font-size: 18px;
     }
-    #ipaImage,
-    #userDirectoryImage,
-    #recipeBoxImage {
+    #bioContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .liveImgContainer {
         height: 260px;
         width: 340px;
     }
     .projectLinksContainer {
         padding: 65px;
+        height: 100%;
     }
     .projectLinks {
         font-size: 32px;
-    }
-    #bioContainer {
-        display: flex;
-        flex-direction: column;
+        margin: 10px;
     }
     .content,
     .centeredContent {
         font-size: 20px;
-        padding: 15px;
-        margin: 25px;
     }
     .contacts {
         margin: 5px;
