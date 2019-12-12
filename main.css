@@ -363,7 +363,7 @@ h5 {
         top: 0;
     }
     .bio {
-        font-size: 18px;
+        font-size: 16px;
     }
     #bioContainer {
         display: flex;
@@ -383,7 +383,7 @@ h5 {
     }
     .content,
     .centeredContent {
-        font-size: 20px;
+        font-size: 16px;
     }
     .contacts {
         margin: 5px;
