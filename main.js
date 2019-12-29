@@ -47,9 +47,8 @@ function projectImageHover() {
 }
 
 function getWindowWidth() {
-    console.log($('#recipeContainer').outerHeight(), $('#recipeContainer').height())
-    if ($(window).width() >= 600) {
-        let bioHeight = $('#bioContainer').innerHeight() + 215;
+    if ($(window).width() >= 700) {
+        let bioHeight = $('#bioContainer').innerHeight() + 200;
         $('#recipeContainer').css({
             'position': 'absolute',
             'left': '220px',
@@ -59,40 +58,39 @@ function getWindowWidth() {
         $('#userDirectoryContainer').css({
             'position': 'absolute',
             'left': '0px',
-            'top': `${$('#recipeContainer').innerHeight() + bioHeight + 30}px`,
+            'top': `${$('#recipeContainer').innerHeight() + bioHeight + 20}px`,
             'width': '50%'
         });
         $('#IPAContainer').css({
             'position': 'absolute',
             'right': '0px',
-            'top': `${$('#userDirectoryContainer').innerHeight() + bioHeight + $('#recipeContainer').innerHeight() + 60}px`,
+            'top': `${$('#userDirectoryContainer').innerHeight() + bioHeight + $('#recipeContainer').innerHeight() + 40}px`,
             'width': '50%'
         });
     }
-    if ($(window).width() < 600) {
+    if ($(window).width() < 700) {
         $('#recipeContainer').css({
             'position': 'static',
-            'margin': '30px 40px',
+            'margin': '15px 30px',
             'padding': '25px'
         });
         $('#userDirectoryContainer').css({
             'position': 'static',
-            'margin': '30px 40px',
+            'margin': '15px 30px',
             'padding': '25px',
         });
         $('#IPAContainer').css({
             'position': 'static',
-            'margin': '30px 40px',
+            'margin': '15px 30px',
             'padding': '25px',
         });
     }
     $(window).resize(function() {
-        let bioResizedHeight = $('#bioContainer').innerHeight() + 175;
-        let recipeHeight = $('#recipeContainer').innerHeight() + 30;
-        let userDirectoryHeight = $('#userDirectoryContainer').innerHeight() + 30;
-        let IPAHeight = $('#IPAContainer').innerHeight() + 30;
+        let bioResizedHeight = $('#bioContainer').innerHeight() + 140;
+        let recipeHeight = $('#recipeContainer').innerHeight() + 20;
+        let userDirectoryHeight = $('#userDirectoryContainer').innerHeight() + 20;
 
-        if ($(window).width() >= 600) {
+        if ($(window).width() >= 700) {
             $('#recipeContainer').css({
                 'position': 'absolute',
                 'left': '220px',
@@ -111,29 +109,25 @@ function getWindowWidth() {
                 'top': `${recipeHeight+bioResizedHeight+ userDirectoryHeight}px`,
                 'width': '50%'
             });
-            // $('#contactContainer').css({
-            //     'position': 'absolute',
-            //     'bottom': `${recipeHeight+bioResizedHeight+ userDirectoryHeight}px`,
-            // });
         }
 
-        if ($(window).width() < 600) {
+        if ($(window).width() < 700) {
             $('#recipeContainer').css({
                 'position': 'static',
-                'margin': '30px 40px',
+                'margin': '15px 30px',
                 'padding': '25px'
             });
             $('#userDirectoryContainer').css({
                 'position': 'static',
-                'margin': '30px 40px',
+                'margin': '15px 30px',
                 'padding': '25px',
-                'width': '75%'
+                'width': 'fit-content'
             });
             $('#IPAContainer').css({
                 'position': 'static',
-                'margin': '30px 40px',
+                'margin': '15px 30px',
                 'padding': '25px',
-                'width': '75%'
+                'width': 'fit-content'
             });
 
         }

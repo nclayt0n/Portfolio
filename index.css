@@ -153,7 +153,7 @@ table {
     text-decoration: none;
     font-size: 16px;
     letter-spacing: .5px;
-    line-height: 22px;
+    line-height: 26px;
 }
 
 h1,
@@ -164,6 +164,7 @@ h4 {
     color: var(--yellow);
     font-weight: bolder;
     font-size: 28px;
+    line-height: 34px;
     margin: 10px 5px;
 }
 
@@ -172,19 +173,21 @@ header a,
 footer a {
     color: var(--blue);
     font-family: Verdana, Tahoma, Geneva, sans-serif;
-    margin: 20px;
+    margin: 15px;
+    line-height: 20px;
 }
 
 h1 {
     color: var(--blue);
     font-family: Tahoma, Verdana, Geneva, sans-serif;
     font-size: 38px;
+    line-height: 42px;
     margin: 10px 20px;
 }
 
 header,
 footer {
-    margin: 30px 20px 0;
+    margin: 30px 40px 0;
     width: fit-content;
 }
 
@@ -202,7 +205,7 @@ header .contactContainer {
 .box1,
 .box2,
 .box3 {
-    margin: 30px 40px;
+    margin: 15px 30px;
     padding: 25px;
 }
 
@@ -233,7 +236,7 @@ main {
     background-color: var(--pink);
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
     main {
         display: flex;
         flex-direction: column;
@@ -245,8 +248,16 @@ main {
     header {
         display: flex;
         height: fit-content;
-        width: 500px;
+        width: 550px;
         align-items: flex-end;
+    }
+    header p {
+        margin-left: 20px;
+    }
+    h1 {
+        font-size: 48px;
+        margin: 0;
+        width: 200px;
     }
     #contactContainer {
         display: none;
@@ -265,14 +276,11 @@ main {
     h2,
     h3,
     h4 {
-        font-size: 40px;
+        font-size: 38px;
+        line-height: 40px;
     }
     .box3 h4 {
         margin-bottom: 20px;
-    }
-    h1 {
-        height: fit-content;
-        font-size: 50px;
     }
     #responsiveContainer {
         display: flex;
