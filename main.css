@@ -18,6 +18,10 @@
     font-family: 'verdana';
 }
 
+a {
+    cursor: pointer;
+}
+
 .hidden {
     display: none;
 }

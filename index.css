@@ -192,11 +192,11 @@ header .contactContainer {
     display: none;
 }
 
-footer .contactContainer {
+#contactContainer {
     display: flex;
     justify-content: space-around;
     cursor: pointer;
-    margin: 10px 20px;
+    margin: auto;
 }
 
 .box1,
@@ -206,12 +206,21 @@ footer .contactContainer {
     padding: 25px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 #bioContainer,
 #userDirectoryContainer {
     background-color: var(--teal);
 }
 
 #bioContainer {
+    font-weight: bold;
+}
+
+#skillsContainer span {
     font-weight: bold;
 }
 
@@ -225,8 +234,54 @@ footer .contactContainer {
 }
 
 @media screen and (min-width:600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
     header .contactContainer {
         display: flex;
         justify-content: space-around;
+    }
+    header {
+        display: flex;
+        height: fit-content;
+        width: 500px;
+        align-items: flex-end;
+    }
+    #contactContainer {
+        display: none;
+    }
+    .box1 p,
+    .box1 h3,
+    .box1 h2,
+    .box1 a,
+    .box2 p,
+    .box2 h3,
+    .box2 h2,
+    .box2 a {
+        padding: 0;
+        margin: 20px;
+    }
+    h2,
+    h3,
+    h4 {
+        font-size: 34px;
+    }
+    h1 {
+        height: fit-content;
+        font-size: 50px;
+    }
+    #responsiveContainer {
+        display: flex;
+    }
+    #skillsContainer {
+        position: absolute;
+        left: 0;
+        width: 150px;
+    }
+    #bioContainer {
+        position: absolute;
+        left: 220px;
+        min-width: 275px;
     }
 }
