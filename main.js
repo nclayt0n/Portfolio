@@ -4,16 +4,16 @@ let currentHour = date.getHours();
 
 function greetingDisplay() {
     if (currentHour >= 5 && currentHour < 10) {
-        greeting = 'Good Morning,<br/> I\'m Nicole';
+        greeting = 'Good Morning';
     }
     if (currentHour >= 10 && currentHour < 18) {
-        greeting = 'Good Afternoon,<br/> I\'m Nicole';
+        greeting = 'Good Afternoon';
     }
     if (currentHour >= 18 && currentHour < 22) {
-        greeting = 'Good Evening,<br/> I\'m Nicole';
+        greeting = 'Good Evening';
     }
     if (currentHour >= 22 || currentHour < 5) {
-        greeting = 'Good Night,<br/> I\'m Nicole';
+        greeting = 'Good Night';
     }
 
     $('h2.greeting').html(greeting);

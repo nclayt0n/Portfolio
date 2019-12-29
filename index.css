@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*portfolio code*/
+
+:root {
+    --white: #FFFFFF;
+    --teal: #1EB697;
+    --blue: #497790;
+    --pink: #FF907E;
+    --yellow: #E2E279;
+}
+
+* {
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 22px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    color: var(--yellow);
+    font-weight: bolder;
+    font-size: 28px;
+    margin: 10px 5px;
+}
+
+header p,
+header a,
+footer a {
+    color: var(--blue);
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: var(--blue);
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    font-size: 38px;
+    margin: 10px 20px;
+}
+
+header,
+footer {
+    margin: 30px 20px 0;
+    width: fit-content;
+}
+
+header .contactContainer {
+    display: none;
+}
+
+footer .contactContainer {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+
+.box1,
+.box2,
+.box3 {
+    margin: 30px 40px;
+    padding: 25px;
+}
+
+#bioContainer,
+#userDirectoryContainer {
+    background-color: var(--teal);
+}
+
+#bioContainer {
+    font-weight: bold;
+}
+
+#skillsContainer,
+#IPAContainer {
+    background-color: var(--blue);
+}
+
+#recipeContainer {
+    background-color: var(--pink);
+}
+
+@media screen and (min-width:600px) {
+    header .contactContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
