@@ -265,7 +265,10 @@ main {
     h2,
     h3,
     h4 {
-        font-size: 34px;
+        font-size: 40px;
+    }
+    .box3 h4 {
+        margin-bottom: 20px;
     }
     h1 {
         height: fit-content;
