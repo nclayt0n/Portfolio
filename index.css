@@ -141,10 +141,10 @@ table {
 
 :root {
     --white: #FFFFFF;
-    --teal: #1EB697;
+    --teal: #00A388;
     --blue: #497790;
-    --pink: #FF907E;
-    --yellow: #E2E279;
+    --pink: #DB7169;
+    --yellow: #FFFF89;
 }
 
 * {
