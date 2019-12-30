@@ -191,13 +191,11 @@ footer {
 }
 
 header .contactContainer {
-    display: none;
+    display: flex;
 }
 
 #contactContainer {
-    display: flex;
-    margin: auto;
-    cursor: pointer;
+    display: none;
 }
 
 .box1,
@@ -287,7 +285,7 @@ main {
         margin: 0;
         width: 200px;
     }
-    #contactContainer {
+    footer #contactContainer {
         display: none;
     }
     .box1 p,
@@ -313,7 +311,7 @@ main {
     #skillsContainer {
         padding: 18px;
         position: relative;
-        top: -425px;
+        top: -448px;
         left: 0;
         width: 150px;
     }
