@@ -6,11 +6,11 @@ last updated: December 30, 2019
 https://nclayt0n.github.io/Portfolio/
 
 ### Purpose
-The reason for this Portfolio is to showcase my abilities, and inform of my experience.
+The reason for this Portfolio is to showcase my abilities, and inform user of my experience.
 
 
 ### Technologies
-HTML, CSS, JS
+HTML, CSS, JS, JQuery
 
 
 #### `Thank you so much for your time`
