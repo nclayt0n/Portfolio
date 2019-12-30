@@ -197,8 +197,6 @@ header .contactContainer {
 }
 
 footer {
-    position: relative;
-    bottom: 30px;
     margin: auto;
     width: 40%;
 }
@@ -229,10 +227,6 @@ footer a {
 .box2 *,
 .box3 * {
     padding: 15px;
-}
-
-main {
-    height: 2200px;
 }
 
 #mainContainer {
@@ -275,9 +269,6 @@ main {
 }
 
 @media screen and (min-width:700px) {
-    main {
-        height: 1850px;
-    }
     #mainContainer {
         margin: 5px auto;
         width: 700px;
@@ -365,9 +356,6 @@ main {
 }
 
 @media screen and (min-width:1024px) {
-    main {
-        height: 1550px;
-    }
     h2,
     h3,
     h4 {
