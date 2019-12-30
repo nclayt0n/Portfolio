@@ -186,7 +186,7 @@ h1 {
 
 header,
 footer {
-    margin: 30px 40px 0;
+    margin: 30px 60px 0;
     width: fit-content;
 }
 
@@ -214,8 +214,13 @@ header .contactContainer {
 }
 
 main {
+    height: 1680px;
+}
+
+#mainContainer {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 #bioContainer,
@@ -252,19 +257,21 @@ main {
 }
 
 @media screen and (min-width:700px) {
+    #mainContainer {
+        margin: 5px auto;
+        width: 700px;
+    }
     .box1,
     .box2,
     .box3 {
         margin: 15px 30px;
         padding: 25px;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
+        width: 80%;
     }
     header .contactContainer {
         display: flex;
         justify-content: space-around;
+        margin-left: 10px;
     }
     header {
         display: flex;
@@ -273,10 +280,10 @@ main {
         align-items: flex-end;
     }
     header p {
-        margin-left: 20px;
+        margin-left: 30px;
     }
     h1 {
-        font-size: 48px;
+        font-size: 40px;
         margin: 0;
         width: 200px;
     }
@@ -303,11 +310,10 @@ main {
     .box3 h4 {
         margin-bottom: 20px;
     }
-    #responsiveContainer {
-        display: flex;
-    }
     #skillsContainer {
-        position: absolute;
+        padding: 18px;
+        position: relative;
+        top: -445px;
         left: 0;
         width: 150px;
     }
@@ -315,37 +321,77 @@ main {
         width: fit-content;
     }
     #bioContainer {
-        position: absolute;
+        position: relative;
         left: 220px;
+        width: 55%;
+    }
+    #recipeContainer {
+        position: relative;
+        left: 220px;
+        top: -715px;
+        width: 55%;
+    }
+    #userDirectoryContainer {
+        position: relative;
+        left: 0px;
+        top: -700px;
+        width: 55%;
+    }
+    #IPAContainer {
+        position: relative;
+        right: -220px;
+        top: -685px;
         width: 55%;
     }
 }
 
 @media screen and (min-width:1024px) {
-    #bioContainer {
-        position: absolute;
-        left: 250px;
-        top: 50px;
-        width: 670px;
+    #mainContainer {
+        margin: 5px auto;
+        width: 1000px;
     }
     #skillsContainer {
-        top: 250px;
-        width: 175px;
+        left: 30px;
+        top: -260px;
+        width: 25%;
     }
     #skillsContainer p {
         padding: 5px;
     }
-    header {
-        margin: 15px 10px;
-        padding: 5px;
-        position: absolute;
+    #bioContainer {
+        position: relative;
+        left: 350px;
+        top: -140px;
+        width: 60%;
+    }
+    #recipeContainer {
+        position: relative;
+        left: 350px;
+        width: 60%;
+        top: -625px;
+    }
+    #userDirectoryContainer {
+        position: relative;
         left: 30px;
-        top: 30px;
-        width: 220px;
+        width: 60%;
+        top: -620px;
+    }
+    #IPAContainer {
+        position: relative;
+        right: -350px;
+        top: -605px;
+        width: 60%;
+    }
+    header {
+        padding: 5px;
+        position: relative;
+        top: 120px;
+        left: 20px;
+        width: 20%;
         flex-direction: column;
     }
     header p {
-        margin: 15px 10px;
+        margin: 15px 20px;
     }
     h1 {
         justify-content: center;
