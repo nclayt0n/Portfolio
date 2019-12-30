@@ -198,7 +198,7 @@ header .contactContainer {
 
 footer {
     margin: auto;
-    width: 40%;
+    width: 80%;
 }
 
 footer .contactContainer {
@@ -206,7 +206,7 @@ footer .contactContainer {
 }
 
 footer address {
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     width: fit-content;
 }
@@ -293,6 +293,10 @@ footer a {
     }
     header p {
         margin-left: 30px;
+    }
+    footer {
+        margin: auto;
+        width: 60%;
     }
     h1 {
         font-size: 38px;
