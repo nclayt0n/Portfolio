@@ -313,7 +313,7 @@ main {
     #skillsContainer {
         padding: 18px;
         position: relative;
-        top: -445px;
+        top: -425px;
         left: 0;
         width: 150px;
     }
@@ -322,79 +322,92 @@ main {
     }
     #bioContainer {
         position: relative;
+        top: 20px;
         left: 220px;
         width: 55%;
     }
     #recipeContainer {
         position: relative;
         left: 220px;
-        top: -715px;
+        top: -640px;
         width: 55%;
     }
     #userDirectoryContainer {
         position: relative;
         left: 0px;
-        top: -700px;
+        top: -625px;
         width: 55%;
     }
     #IPAContainer {
         position: relative;
         right: -220px;
-        top: -685px;
+        top: -605px;
         width: 55%;
     }
 }
 
 @media screen and (min-width:1024px) {
+    h2,
+    h3,
+    h4 {
+        font-size: 44px;
+    }
     #mainContainer {
         margin: 5px auto;
         width: 1000px;
     }
     #skillsContainer {
         left: 30px;
-        top: -260px;
+        top: -257px;
         width: 25%;
-    }
-    #skillsContainer p {
-        padding: 5px;
+        height: 470px;
     }
     #bioContainer {
         position: relative;
         left: 350px;
         top: -140px;
-        width: 60%;
+        width: 50%;
     }
     #recipeContainer {
         position: relative;
         left: 350px;
-        width: 60%;
+        width: 50%;
         top: -625px;
     }
     #userDirectoryContainer {
         position: relative;
         left: 30px;
-        width: 60%;
-        top: -620px;
+        width: 50%;
+        top: -600px;
+    }
+    #userDirectoryContainer * {
+        margin-left: 5px;
     }
     #IPAContainer {
         position: relative;
         right: -350px;
-        top: -605px;
-        width: 60%;
+        top: -575px;
+        width: 50%;
     }
     header {
         padding: 5px;
         position: relative;
         top: 120px;
         left: 20px;
-        width: 20%;
+        width: 25%;
+        align-items: flex-start;
         flex-direction: column;
     }
     header p {
-        margin: 15px 20px;
+        margin: 10px 0px 10px 10px;
+    }
+    header .contactContainer {
+        margin: 0;
     }
     h1 {
+        margin: 10px;
         justify-content: center;
         font-size: 46px;
+        line-height: 46px;
     }
 }
