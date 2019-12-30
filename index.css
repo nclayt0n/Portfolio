@@ -156,6 +156,10 @@ table {
     line-height: 26px;
 }
 
+a {
+    text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
@@ -169,8 +173,7 @@ h4 {
 }
 
 header p,
-header a,
-footer a {
+header a {
     color: var(--blue);
     font-family: Verdana, Tahoma, Geneva, sans-serif;
     margin: 10px;
@@ -184,8 +187,7 @@ h1 {
     line-height: 42px;
 }
 
-header,
-footer {
+header {
     margin: 30px 60px 0;
     width: fit-content;
 }
@@ -194,8 +196,26 @@ header .contactContainer {
     display: flex;
 }
 
-#contactContainer {
-    display: none;
+footer {
+    position: relative;
+    bottom: 30px;
+    margin: auto;
+    width: 40%;
+}
+
+footer .contactContainer {
+    display: flex;
+}
+
+footer address {
+    justify-content: space-around;
+    margin: auto;
+    width: fit-content;
+}
+
+footer a {
+    font-size: 22px;
+    color: var(--blue);
 }
 
 .box1,
@@ -212,7 +232,7 @@ header .contactContainer {
 }
 
 main {
-    height: 1680px;
+    height: 2200px;
 }
 
 #mainContainer {
@@ -255,6 +275,9 @@ main {
 }
 
 @media screen and (min-width:700px) {
+    main {
+        height: 1850px;
+    }
     #mainContainer {
         margin: 5px auto;
         width: 700px;
@@ -284,9 +307,6 @@ main {
         font-size: 38px;
         margin: 0;
         width: 200px;
-    }
-    footer #contactContainer {
-        display: none;
     }
     .box1 p,
     .box1 h3,
@@ -345,6 +365,9 @@ main {
 }
 
 @media screen and (min-width:1024px) {
+    main {
+        height: 1550px;
+    }
     h2,
     h3,
     h4 {
