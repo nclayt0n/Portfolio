@@ -172,8 +172,8 @@ h4 {
     margin: 5px;
 }
 
-header p,
-header a {
+.header p,
+.header a {
     color: var(--blue);
     font-family: Verdana, Tahoma, Geneva, sans-serif;
     margin: 10px;
@@ -187,12 +187,12 @@ h1 {
     line-height: 42px;
 }
 
-header {
+.header {
     margin: 30px 60px 0;
     width: fit-content;
 }
 
-header .contactContainer {
+.header .contact-container {
     display: flex;
 }
 
@@ -201,7 +201,7 @@ footer {
     width: 80%;
 }
 
-footer .contactContainer {
+footer .contact-container {
     display: flex;
 }
 
@@ -216,32 +216,39 @@ footer a {
     color: var(--blue);
 }
 
-.box1,
-.box2,
+.box-one,
+.box-two,
 .box3 {
     margin: 15px 30px;
     padding: 25px;
 }
 
-.box1 *,
-.box2 *,
+.box-one *,
+.box-two *,
 .box3 * {
     padding: 15px;
 }
 
-#mainContainer {
+main {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
+#bioContainer {
+    display: none;
+}
+
 #bioContainer,
+#bioContainer-mobile,
 #userDirectoryContainer {
     background-color: var(--teal);
 }
 
-#bioContainer {
+#bioContainer,
+#bioContainer-mobile {
     font-weight: bold;
+    order: 1;
 }
 
 #skillsContainer span {
@@ -255,13 +262,14 @@ footer a {
     background-color: var(--blue);
 }
 
+#CGCContainer,
 #recipeContainer {
     background-color: var(--pink);
 }
 
 @media screen and (min-width:400px) {
-    .box1,
-    .box2,
+    .box-one,
+    .box-two,
     .box3 {
         margin: 15px 60px;
         padding: 25px;
@@ -269,29 +277,39 @@ footer a {
 }
 
 @media screen and (min-width:700px) {
-    #mainContainer {
+    main {
         margin: 5px auto;
         width: 700px;
     }
-    .box1,
-    .box2,
+    #bioContainer-mobile {
+        display: none;
+    }
+    #bioContainer {
+        display: block;
+    }
+    #column-two {
+        display: flex;
+        width: 100%;
+    }
+    .box-one,
+    .box-two,
     .box3 {
-        margin: 15px 30px;
+        margin: 15px;
         padding: 25px;
         width: 80%;
     }
-    header .contactContainer {
+    .header .contact-container {
         display: flex;
         justify-content: space-around;
         margin-left: 10px;
     }
-    header {
+    .header {
         display: flex;
         height: fit-content;
         width: 550px;
         align-items: flex-end;
     }
-    header p {
+    .header p {
         margin-left: 30px;
     }
     footer {
@@ -303,14 +321,14 @@ footer a {
         margin: 0;
         width: 200px;
     }
-    .box1 p,
-    .box1 h3,
-    .box1 h2,
-    .box1 a,
-    .box2 p,
-    .box2 h3,
-    .box2 h2,
-    .box2 a {
+    .box-one p,
+    .box-one h3,
+    .box-one h2,
+    .box-one a,
+    .box-two p,
+    .box-two h3,
+    .box-two h2,
+    .box-two a {
         padding: 0;
         margin: 20px;
     }
@@ -323,108 +341,75 @@ footer a {
     .box3 h4 {
         margin-bottom: 20px;
     }
-    #skillsContainer {
-        padding: 18px;
-        position: relative;
-        top: -445px;
-        left: 0;
-        width: 150px;
-    }
     #skillsContainer p {
         width: fit-content;
     }
-    #bioContainer {
-        position: relative;
-        top: 25px;
-        left: 220px;
-        width: 55%;
+    #column-three {
+        display: flex;
+        flex-direction: column;
     }
-    #recipeContainer {
-        position: relative;
-        left: 220px;
-        top: -680px;
-        width: 55%;
+    .project-container {
+        display: flex;
     }
-    #userDirectoryContainer {
-        position: relative;
-        left: 0px;
-        top: -655px;
-        width: 55%;
+    #reverse {
+        flex-direction: row-reverse;
     }
-    #IPAContainer {
-        position: relative;
-        right: -220px;
-        top: -630px;
+    .box-two {
         width: 55%;
     }
 }
 
 @media screen and (min-width:1024px) {
+    .box3 h4 {
+        margin: 5px;
+        padding: 10px;
+    }
     h2,
     h3,
     h4 {
         font-size: 44px;
     }
-    #mainContainer {
+    main {
         margin: 5px auto;
         width: 1000px;
     }
     #skillsContainer {
-        left: 30px;
-        top: -287px;
-        width: 25%;
-        height: 508px;
+        left: 0px;
+        top: 195px;
+        height: 500px;
+        position: relative;
     }
     #skillsContainer span {
-        font-size: 20px;
+        font-size: 18px;
     }
-    #bioContainer {
-        position: relative;
-        left: 350px;
-        top: -160px;
-        width: 50%;
-    }
-    #recipeContainer {
-        position: relative;
-        left: 350px;
-        width: 50%;
-        top: -700px;
-    }
-    #userDirectoryContainer {
-        position: relative;
-        left: 30px;
-        width: 50%;
-        top: -685px;
-    }
-    #userDirectoryContainer * {
-        margin-left: 5px;
-    }
-    #IPAContainer {
-        position: relative;
-        right: -350px;
-        top: -665px;
-        width: 50%;
-    }
-    header {
-        margin: 0 0 0 60px;
-        padding: 5px;
-        position: relative;
-        top: 115px;
-        left: 20px;
-        width: 25%;
-        align-items: flex-start;
+    .header {
         flex-direction: column;
+        width: fit-content;
+        align-items: flex-start;
     }
-    header p {
-        margin: 10px 0px 10px 10px;
+    .header p {
+        margin: 0px 0px 10px 20px;
+        width: 85%;
+        font-size: 18px;
+        line-height: 18px;
     }
-    header .contactContainer {
-        margin: 25px 0 0 0;
+    .header .contact-container {
+        font-size: 14px;
+        width: fit-content;
+        margin: 0 10px auto;
     }
     h1 {
-        margin: 10px;
+        margin: 10px 0px 10px 20px;
         justify-content: center;
-        font-size: 52px;
-        line-height: 55px;
+        font-size: 46px;
+        line-height: 48px;
+    }
+    #column-one {
+        position: absolute;
+        left: 55px;
+        top: 5px;
+    }
+    #column-two {
+        margin-top: 30px;
     }
 }
