@@ -218,14 +218,14 @@ footer a {
 
 .box-one,
 .box-two,
-.box3 {
+.box-three {
     margin: 15px 30px;
     padding: 25px;
 }
 
 .box-one *,
 .box-two *,
-.box3 * {
+.box-three * {
     padding: 15px;
 }
 
@@ -270,7 +270,7 @@ main {
 @media screen and (min-width:400px) {
     .box-one,
     .box-two,
-    .box3 {
+    .box-three {
         margin: 15px 60px;
         padding: 25px;
     }
@@ -293,7 +293,7 @@ main {
     }
     .box-one,
     .box-two,
-    .box3 {
+    .box-three {
         margin: 15px;
         padding: 25px;
         width: 80%;
@@ -338,7 +338,7 @@ main {
         font-size: 38px;
         line-height: 40px;
     }
-    .box3 h4 {
+    .box-three h4 {
         margin-bottom: 20px;
     }
     #skillsContainer p {
@@ -360,7 +360,7 @@ main {
 }
 
 @media screen and (min-width:1024px) {
-    .box3 h4 {
+    .box-three h4 {
         margin: 5px;
         padding: 10px;
     }
@@ -394,7 +394,7 @@ main {
         line-height: 18px;
     }
     .header .contact-container {
-        font-size: 14px;
+        font-size: 18px;
         width: fit-content;
         margin: 0 10px auto;
     }
@@ -404,12 +404,18 @@ main {
         font-size: 46px;
         line-height: 48px;
     }
+    .box-two {
+        width: 60%;
+    }
     #column-one {
-        position: absolute;
-        left: 55px;
+        position: relative;
+        left: -65px;
         top: 5px;
     }
     #column-two {
-        margin-top: 30px;
+        margin-top: -200px;
+    }
+    #column-three {
+        margin-right: 60px;
     }
 }
