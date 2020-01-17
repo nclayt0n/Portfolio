@@ -245,12 +245,6 @@ main {
     background-color: var(--teal);
 }
 
-#bioContainer,
-#bioContainer-mobile {
-    font-weight: bold;
-    order: 1;
-}
-
 #skillsContainer span {
     font-weight: bold;
     padding: 0;
