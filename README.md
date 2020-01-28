@@ -1,6 +1,6 @@
 ## `Introduction`
 Created by Nicole Clayton<br/>
-last updated: December 30, 2019
+last updated: January 27, 2020
 
 ### Live Link
 https://nclayt0n.github.io/Portfolio/
