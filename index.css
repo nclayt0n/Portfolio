@@ -457,7 +457,7 @@ a:hover {
     #column-one {
         position: relative;
         left: 0px;
-        top: 5px;
+        top: 35px;
     }
     #column-two {
         margin-top: -200px;
@@ -465,8 +465,8 @@ a:hover {
     /*projects container*/
     #skillsContainer {
         left: 0px;
-        top: 195px;
-        height: 500px;
+        top: 235px;
+        height: 580px;
         position: relative;
     }
     #skillsContainer span {
@@ -483,7 +483,7 @@ a:hover {
         margin: 0px 0px 10px 20px;
         width: 85%;
         font-size: 18px;
-        line-height: 18px;
+        line-height: 25px;
     }
     .header .contact-container {
         font-size: 18px;
