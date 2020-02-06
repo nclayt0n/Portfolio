@@ -247,7 +247,7 @@ img {
 }
 
 img:hover {
-    width: 100%;
+    width: 99%;
     bottom: 0;
     left: 0;
     right: 0;
